@@ -17,6 +17,7 @@ public class Plot : MonoBehaviour
     public bool IsPlanted => isPlanted;
     private int pilih;
     private int simpanPilih;
+    [SerializeField] private GameObject pilihBenih;
 
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class Plot : MonoBehaviour
         {
             timer -= Time.deltaTime;
 
-            if (timer < 0 && (plantStage < manggaStages.Length-1 || plantStage < angsanaStages.Length-1))
+            if (timer < 0 && (plantStage < manggaStages.Length-1 || plantStage < angsanaStages.Length-1 || plantStage < mahoniStages.Length-1 || plantStage < tanjungStages.Length-1))
             {
                 timer = timeBtwStages;
                 plantStage++;
@@ -43,16 +44,16 @@ public class Plot : MonoBehaviour
     public void Plant()
     {
         if (pilih != -1) {
-        Debug.Log("Planted");
-        simpanPilih = pilih; //menyimpan variabel pilih dari script pilihTana.cs supaya tidak berganti ketika menjalankan fungsi UpdatePlant
-        isPlanted = true;
-        plantStage = 0;
-        UpdatePlant();
-        timer = timeBtwStages;
-        plant.gameObject.SetActive(true);
-        }
-        else {
-            //memanggil UI "kamu belum memilih tanaman
+            pilihBenih.SetActive(false);
+            Debug.Log("Planted");
+            simpanPilih = pilih; //menyimpan variabel pilih dari script pilihTana.cs supaya tidak berganti ketika menjalankan fungsi UpdatePlant
+            isPlanted = true;
+            plantStage = 0;
+            UpdatePlant();
+            timer = timeBtwStages;
+            plant.gameObject.SetActive(true);
+        } else {
+            pilihBenih.SetActive(true);
         }
     }
     
@@ -70,7 +71,6 @@ public class Plot : MonoBehaviour
             case 3:
             plant.sprite = tanjungStages[plantStage];
             break;
-
         }
     }
 
