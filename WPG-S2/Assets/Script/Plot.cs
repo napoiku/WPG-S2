@@ -8,7 +8,7 @@ public class Plot : MonoBehaviour
 {
     public bool isPlanted = false;
     public SpriteRenderer plant;
-    public Sprite[] manggaStages, angsanaStages;
+    public Sprite[] manggaStages, angsanaStages, mahoniStages, tanjungStages;
     int plantStage = 0;
     public float timeBtwStages = 5f;
     float timer;
@@ -56,12 +56,21 @@ public class Plot : MonoBehaviour
         }
     }
     
-    public void UpdatePlant()
-    {
-        if (simpanPilih == 0) { //pengkondisian jenis pohon mana yang ditanam sesuai inputan pemain
-            plant.sprite = manggaStages[plantStage] ;
-        } else if (simpanPilih == 1) {
-            plant.sprite = angsanaStages[plantStage] ;
+    public void UpdatePlant() {
+        switch(simpanPilih) {
+            case 0:
+            plant.sprite = manggaStages[plantStage];
+            break;
+            case 1:
+            plant.sprite = angsanaStages[plantStage];
+            break;
+            case 2:
+            plant.sprite = mahoniStages[plantStage];
+            break;
+            case 3:
+            plant.sprite = tanjungStages[plantStage];
+            break;
+
         }
     }
 
