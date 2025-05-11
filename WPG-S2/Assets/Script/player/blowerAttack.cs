@@ -6,6 +6,7 @@ public class blowerAttack : MonoBehaviour
 {
     public Renderer attackArea; // digunakan untuk mengontrol visibilitas area serangan
     Collider2D mycollider; // untuk mendeklarasi mycollider dan untuk mendeteksi benturan dengan objek lain
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class blowerAttack : MonoBehaviour
         {
             attackArea.enabled = true; // aktifkan visual area serangan
             mycollider.enabled = true; // aktifkan collider area serangan
+            animator.SetTrigger("Attack");
         } 
 
         if (Input.GetKeyUp(KeyCode.Mouse0))
@@ -32,11 +34,13 @@ public class blowerAttack : MonoBehaviour
         } 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if(other.gameObject.CompareTag("Enemy"))
+    //     {
+    //         // Destroy(other.gameObject);
+    //         enemy.Destroy();
+            
+    //     }
+    // }
 }

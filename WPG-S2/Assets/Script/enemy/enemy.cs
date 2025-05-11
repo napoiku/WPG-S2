@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [Header("Target Settings")]
     public Transform target;
     public string targetTag = "Point";
+    public Animator animator;
 
-    [Header("Movement Settings")]
     public float moveSpeed = 10f;
     public float stopDistance = 0.01f; // jarak minimum untuk berhenti
 
     private Rigidbody2D rb;
     private Vector2 movement;
+    
 
     void Start()
     {
@@ -60,5 +60,14 @@ public class Enemy : MonoBehaviour
     void MoveCharacter(Vector2 direction)
     {
         rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Wind"))
+        {
+            animator.SetTrigger("Destroy");
+            Destroy(gameObject,0.25f);
+        }
     }
 }

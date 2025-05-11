@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7156e385cab0794d937c0a892ce7ede
+guid: f4e92aa6296858040a1388814d888c82
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,8 +104,8 @@ TextureImporter:
         y: 1091
         width: 1049
         height: 2613
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.0018884825, y: 0.49935597}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: blower wind_2
       rect:
         serializedVersion: 2
-        x: 1919
-        y: 1086
-        width: 1118
+        x: 799
+        y: 1091
+        width: 2238
         height: 2614
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: -0.00061234244, y: 0.50199366}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: blower wind_3
       rect:
         serializedVersion: 2
-        x: 3222
+        x: 794
         y: 1093
-        width: 1105
+        width: 3533
         height: 2627
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: -0.00001064185, y: 0.49801648}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: blower wind_4
       rect:
         serializedVersion: 2
-        x: 4533
+        x: 794
         y: 1100
-        width: 1105
+        width: 4844
         height: 2613
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.00024407763, y: 0.4999999}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: blower wind_5
       rect:
         serializedVersion: 2
-        x: 5768
+        x: 806
         y: 1107
-        width: 1104
+        width: 6066
         height: 2620
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.0015106151, y: 0.4999999}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
