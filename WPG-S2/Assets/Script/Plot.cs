@@ -20,6 +20,7 @@ public class Plot : MonoBehaviour
     [SerializeField] private GameObject pilihBenih;
     public tunas tunas;
     private float clock;
+    [SerializeField] private GameObject benihHabis;
 
     public void Start() {
         tunas = GameObject.Find("GameManager").GetComponent<tunas>();
@@ -28,7 +29,12 @@ public class Plot : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        clock -= Time.deltaTime;
+        if(clock > 0f) {
+            clock -= Time.deltaTime;
+            if(clock <= 0f) {
+                benihHabis.SetActive(false);
+                }
+        }
 
         if (isPlanted)
         {
@@ -63,12 +69,9 @@ public class Plot : MonoBehaviour
             UpdatePlant();
             timer = timeBtwStages;
             plant.gameObject.SetActive(true);
-        } else if(pilih != -1 && tunas.CekBiji(pilih) == 0) {
-            // benihHabis.SetActive(true);
-            // clock = 5;
-            // if(clock > 0) {
-            //     benihHabis.SetActive(false)
-            // }
+        } else if((pilih == 0||pilih == 1 || pilih == 2 || pilih == 3) && tunas.CekBiji(pilih) == 0) {
+            benihHabis.SetActive(true);
+            clock = 2f;
         } else {
             pilihBenih.SetActive(true);
         }
