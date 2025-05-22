@@ -8,10 +8,13 @@ public class Skor : MonoBehaviour
     int fullGrow = 0;
     public TMP_Text fullGrowText;
     [SerializeField] private GameObject win;
+    [SerializeField] private GameObject hotbar;    
 
     void Update() {
         if(fullGrow == 6) {
+            Time.timeScale = 0;
             win.SetActive(true);
+            hotbar.SetActive(false);
         }
     }
 
