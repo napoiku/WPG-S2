@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
+    public AudioSource audioSource;
+
     private float horizontal;
     private float vertical;
     private float speed = 30f;
@@ -15,9 +17,24 @@ public class move : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-    void FixedUpdate ()
+    void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+
+        if (rb.velocity.x != 0 || rb.velocity.y != 0)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
     }
     
     void Update ()

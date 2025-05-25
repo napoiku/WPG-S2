@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour
     public Transform target;
     public string targetTag = "Point";
     public Animator animator;
+    public AudioSource audioSource;
 
     public float moveSpeed = 10f;
     public float stopDistance = 0.01f; // jarak minimum untuk berhenti
@@ -67,6 +68,7 @@ public class Enemy : MonoBehaviour
         if(collision.gameObject.CompareTag("Wind"))
         {
             animator.SetTrigger("Destroy");
+            audioSource.Play();
             Destroy(gameObject,0.25f);
         }
     }
