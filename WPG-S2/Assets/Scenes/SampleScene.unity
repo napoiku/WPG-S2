@@ -343,7 +343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38900003, y: 0.102000006}
   m_AnchorMax: {x: 0.6083786, y: 0.224}
-  m_AnchoredPosition: {x: 0.000015258789, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.000061035, y: 0.000053406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26633531
@@ -1917,7 +1917,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 28e5b0353d3e1ca4097fc3dc504a7181, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f1728b71a4a0ca419f21970d1160d7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6317,7 +6317,6 @@ GameObject:
   - component: {fileID: 1183025684}
   - component: {fileID: 1183025685}
   - component: {fileID: 1183025686}
-  - component: {fileID: 1183025687}
   m_Layer: 0
   m_Name: batu (1)
   m_TagString: Untagged
@@ -6406,71 +6405,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
   offset: 2
---- !u!68 &1183025687
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183025683}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.6964963, y: 3.614759}
-  - {x: -0.71670127, y: 3.6318154}
-  - {x: -0.70386964, y: 3.698501}
-  - {x: -0.5825399, y: 3.9536123}
-  - {x: -0.23349199, y: 4.227253}
-  - {x: 0.08412308, y: 4.2847085}
-  - {x: 0.44305363, y: 4.1100087}
-  - {x: 0.63188845, y: 3.7010338}
-  - {x: 0.6148814, y: 3.657613}
-  - {x: 0.5646377, y: 3.6589308}
-  - {x: 0.5234785, y: 3.6562936}
-  - {x: 0.5008422, y: 3.6422698}
-  - {x: 0.49174696, y: 3.641308}
-  - {x: 0.40774524, y: 3.615201}
-  - {x: 0.37671426, y: 3.6013267}
-  - {x: 0.32924908, y: 3.6236093}
-  - {x: 0.0040273666, y: 3.5390887}
-  - {x: -0.1120938, y: 3.5283117}
-  - {x: -0.30707148, y: 3.5401666}
-  - {x: -0.44623384, y: 3.5710301}
-  - {x: -0.5782213, y: 3.599258}
-  - {x: -0.50670934, y: 3.5871272}
-  - {x: -0.60877687, y: 3.6076639}
-  - {x: -0.6640767, y: 3.6161878}
-  - {x: -0.6794466, y: 3.6161478}
-  - {x: -0.6882989, y: 3.6154635}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1234656863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6892,7 +6826,6 @@ GameObject:
   - component: {fileID: 1304462458}
   - component: {fileID: 1304462459}
   - component: {fileID: 1304462460}
-  - component: {fileID: 1304462461}
   m_Layer: 0
   m_Name: batu (5)
   m_TagString: Untagged
@@ -6981,71 +6914,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
   offset: 0
---- !u!68 &1304462461
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304462457}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.6964963, y: 3.614759}
-  - {x: -0.71670127, y: 3.6318154}
-  - {x: -0.70386964, y: 3.698501}
-  - {x: -0.5825399, y: 3.9536123}
-  - {x: -0.23349199, y: 4.227253}
-  - {x: 0.08412308, y: 4.2847085}
-  - {x: 0.44305363, y: 4.1100087}
-  - {x: 0.63188845, y: 3.7010338}
-  - {x: 0.6148814, y: 3.657613}
-  - {x: 0.5646377, y: 3.6589308}
-  - {x: 0.5234785, y: 3.6562936}
-  - {x: 0.5008422, y: 3.6422698}
-  - {x: 0.49174696, y: 3.641308}
-  - {x: 0.40774524, y: 3.615201}
-  - {x: 0.37671426, y: 3.6013267}
-  - {x: 0.32924908, y: 3.6236093}
-  - {x: 0.0040273666, y: 3.5390887}
-  - {x: -0.1120938, y: 3.5283117}
-  - {x: -0.30707148, y: 3.5401666}
-  - {x: -0.44623384, y: 3.5710301}
-  - {x: -0.5782213, y: 3.599258}
-  - {x: -0.50670934, y: 3.5871272}
-  - {x: -0.60877687, y: 3.6076639}
-  - {x: -0.6640767, y: 3.6161878}
-  - {x: -0.6794466, y: 3.6161478}
-  - {x: -0.6882989, y: 3.6154635}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1311637179
 GameObject:
   m_ObjectHideFlags: 0
@@ -10638,7 +10506,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2131697714, guid: 392dd2589957ced4fac574c814b9d4bd, type: 3}
+  m_Sprite: {fileID: 696190918, guid: 7a4617781c4191e45b7a18fc2b171172, type: 3}
   m_Color: {r: 1, g: 0.9481132, b: 0.9481132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10705,6 +10573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1973035143}
+  divider: 0
   rb: {fileID: 1973035136}
 --- !u!114 &1973035138
 MonoBehaviour:
@@ -11587,7 +11456,6 @@ GameObject:
   - component: {fileID: 2057654141}
   - component: {fileID: 2057654142}
   - component: {fileID: 2057654143}
-  - component: {fileID: 2057654144}
   m_Layer: 0
   m_Name: batu
   m_TagString: Untagged
@@ -11676,71 +11544,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
   offset: 0
---- !u!68 &2057654144
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057654140}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.6964963, y: 3.614759}
-  - {x: -0.71670127, y: 3.6318154}
-  - {x: -0.70386964, y: 3.698501}
-  - {x: -0.5825399, y: 3.9536123}
-  - {x: -0.23349199, y: 4.227253}
-  - {x: 0.08412308, y: 4.2847085}
-  - {x: 0.44305363, y: 4.1100087}
-  - {x: 0.63188845, y: 3.7010338}
-  - {x: 0.6148814, y: 3.657613}
-  - {x: 0.5646377, y: 3.6589308}
-  - {x: 0.5234785, y: 3.6562936}
-  - {x: 0.5008422, y: 3.6422698}
-  - {x: 0.49174696, y: 3.641308}
-  - {x: 0.40774524, y: 3.615201}
-  - {x: 0.37671426, y: 3.6013267}
-  - {x: 0.32924908, y: 3.6236093}
-  - {x: 0.0040273666, y: 3.5390887}
-  - {x: -0.1120938, y: 3.5283117}
-  - {x: -0.30707148, y: 3.5401666}
-  - {x: -0.44623384, y: 3.5710301}
-  - {x: -0.5782213, y: 3.599258}
-  - {x: -0.50670934, y: 3.5871272}
-  - {x: -0.60877687, y: 3.6076639}
-  - {x: -0.6640767, y: 3.6161878}
-  - {x: -0.6794466, y: 3.6161478}
-  - {x: -0.6882989, y: 3.6154635}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &2078225628
 GameObject:
   m_ObjectHideFlags: 0

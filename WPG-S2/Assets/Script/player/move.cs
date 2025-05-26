@@ -19,7 +19,11 @@ public class move : MonoBehaviour
     }
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+        if(horizontal != 0 && vertical != 0) {
+            rb.velocity = new Vector2(horizontal * speed/1.4f, vertical * speed/1.4f);
+        } else {
+            rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+        }
 
         if (rb.velocity.x != 0 || rb.velocity.y != 0)
         {
