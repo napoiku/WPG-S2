@@ -11,20 +11,21 @@ public class Skor : MonoBehaviour
     [SerializeField] private GameObject hotbar;    
 
     void Update() {
-        if(fullGrow == 6) {
+        if(fullGrow == 3) {
             Time.timeScale = 0;
             win.SetActive(true);
             hotbar.SetActive(false);
         }
+
+        updateUI();
     }
 
     public void iFullGrow() {
         fullGrow += 1;
-        updateUI();
     }
 
     void updateUI() {
-        fullGrowText.text = "Pohon Tumbuh Sempurna : " + fullGrow;
+        fullGrowText.text = "Pohon Tumbuh Sempurna : " + fullGrow + "/3";
     }
 
 
