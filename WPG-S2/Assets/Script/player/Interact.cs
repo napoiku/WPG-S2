@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    private void Update(){
+    public AudioSource audioSource;
+    private void Update()
+    {
 
-        if (Input.GetKeyDown(KeyCode.E)){
+        if (Input.GetKeyDown(KeyCode.E))
+        {
             Collider2D[] colliderArray = Physics2D.OverlapCircleAll(transform.position, 15f);
-            foreach (Collider2D collider in colliderArray) {
-                if (collider.TryGetComponent(out Plot plant)) {
+            foreach (Collider2D collider in colliderArray)
+            {
+                if (collider.TryGetComponent(out Plot plant))
+                {
+                    audioSource.Play();
                     plant.Plant();
                 }
-            } 
+            }
         }
     }
 
