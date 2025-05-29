@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class openmenu : MonoBehaviour
 {
     [SerializeField] GameObject GameMenu;
+    [SerializeField] GameObject Hotbar;
     private bool isPaused = false;
 
     void Update()
@@ -13,6 +14,7 @@ public class openmenu : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
         GameMenu.SetActive(!GameMenu.activeSelf);
+        Hotbar.SetActive(!Hotbar.activeSelf);
         TogglePause();
         }
 

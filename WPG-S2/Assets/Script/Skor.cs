@@ -9,6 +9,7 @@ public class Skor : MonoBehaviour
     public TMP_Text fullGrowText;
     [SerializeField] private GameObject win;
     [SerializeField] private GameObject hotbar;  
+    [SerializeField] private GameObject quest;
     public StopMusic bgmController;
     
 
@@ -17,6 +18,7 @@ public class Skor : MonoBehaviour
             Time.timeScale = 0;
             win.SetActive(true);
             hotbar.SetActive(false);
+            quest.SetActive(false);
             bgmController.StopBGM();
         }
 
