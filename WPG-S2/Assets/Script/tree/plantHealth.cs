@@ -7,6 +7,7 @@ public class plantHealth : MonoBehaviour
 {
     public Slider healthBar; // Ganti dari Image ke Slider
     public float healthAmount = 100f;
+    public Plot plot;
 
     void Start()
     {
@@ -19,15 +20,20 @@ public class plantHealth : MonoBehaviour
     {
         if (healthAmount <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            plot.dead();
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(20f);
+            if (plot != null && plot.IsPlanted && plot.GetStage() < 2) // hanya bisa diserang jika stage < 2
+            {
+                TakeDamage(100f);
+            }
         }
     }
 
@@ -38,3 +44,4 @@ public class plantHealth : MonoBehaviour
         healthBar.value = healthAmount;
     }
 }
+
