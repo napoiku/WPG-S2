@@ -15,7 +15,6 @@ public class Skor : MonoBehaviour
 
     void Update() {
         if(fullGrow == 3) {
-            Time.timeScale = 0;
             win.SetActive(true);
             hotbar.SetActive(false);
             quest.SetActive(false);
