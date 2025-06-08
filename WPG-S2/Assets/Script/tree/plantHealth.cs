@@ -18,6 +18,8 @@ public class plantHealth : MonoBehaviour
 
     void Update()
     {
+        healthBar.value = healthAmount;
+        
         if (healthAmount <= 0)
         {
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -41,7 +43,6 @@ public class plantHealth : MonoBehaviour
     {
         healthAmount -= damage;
         healthAmount = Mathf.Clamp(healthAmount, 0, 100); // Pastikan tidak negatif
-        healthBar.value = healthAmount;
     }
 }
 
