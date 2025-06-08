@@ -72,7 +72,7 @@ public class Plot : MonoBehaviour
 
     public void Plant()
     {
-        if (pilih != -1 && tunas.CekBiji(pilih) > 0)
+        if (pilih != -1 && tunas.CekBiji(pilih) > 0 && !isPlanted)
         {
             Debug.Log("Planted");
             tunas.KurangiBiji(pilih);
