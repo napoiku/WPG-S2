@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    public AudioSource audioSource;
     private void Update()
     {
 
@@ -15,7 +14,6 @@ public class Interact : MonoBehaviour
             {
                 if (collider.TryGetComponent(out Plot plant))
                 {
-                    audioSource.Play();
                     plant.Plant();
                 }
             }

@@ -9,7 +9,7 @@
         public bool isPlanted = false;
         public SpriteRenderer plant;
         public Sprite[] manggaStages, angsanaStages, mahoniStages, tanjungStages;
-        public Sprite manggaDead, angsanaDead, mahoniDead, tanjungDead, nullnull;
+        public Sprite manggaDead, angsanaDead, mahoniDead, tanjungDead;
         int plantStage = 0;
         public float timeBtwStages = 5f;
         float timer;
@@ -25,6 +25,7 @@
         [SerializeField] private GameObject benihHabis;
         private bool isDead = false;
         public plantHealth nyawa;
+        public AudioSource audioSource;
         public void Start()
     {
         tunas = GameObject.Find("Plot").GetComponent<tunas>();
@@ -76,7 +77,8 @@
             if (pilih != -1 && tunas.CekBiji(pilih) > 0 && !isPlanted)
             {
                     Debug.Log("Planted");
-
+                    audioSource.Play();
+                    
                     if (isDead) {
                         isDead = false;
                         nyawa.healthAmount = 100;

@@ -1134,6 +1134,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 1181179191}
+  audioSource: {fileID: 386397202}
 --- !u!212 &66186611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1918,6 +1920,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 161094630}
+  audioSource: {fileID: 386397202}
 --- !u!212 &133121416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4824,6 +4828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386397200}
   - component: {fileID: 386397201}
+  - component: {fileID: 386397202}
   m_Layer: 0
   m_Name: Plot
   m_TagString: Untagged
@@ -4870,6 +4875,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biji: 02000000020000000200000002000000
   total: 0
+--- !u!82 &386397202
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386397199}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d8201ef3593e58b42b08f86f19d8b893, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &405202236
 GameObject:
   m_ObjectHideFlags: 0
@@ -5022,6 +5123,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 1886514460}
+  audioSource: {fileID: 386397202}
 --- !u!212 &405202241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7860,6 +7963,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 764222436}
+  audioSource: {fileID: 386397202}
 --- !u!212 &608851255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8132,6 +8237,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 1774692605}
+  audioSource: {fileID: 386397202}
 --- !u!68 &616155493
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -11944,6 +12051,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 1969550626}
+  audioSource: {fileID: 386397202}
 --- !u!212 &897492244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17128,6 +17237,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 469460037}
+  audioSource: {fileID: 386397202}
 --- !u!212 &1294645314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18135,6 +18246,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 1286927873}
+  audioSource: {fileID: 386397202}
 --- !u!212 &1381957378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26046,7 +26159,6 @@ GameObject:
   - component: {fileID: 1973035141}
   - component: {fileID: 1973035142}
   - component: {fileID: 1973035143}
-  - component: {fileID: 1973035144}
   m_Layer: 0
   m_Name: Pou
   m_TagString: Player
@@ -26176,7 +26288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb713539d03eaa541a73e075626555ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1973035144}
 --- !u!70 &1973035140
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -26266,102 +26377,6 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 51
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &1973035144
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973035132}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d8201ef3593e58b42b08f86f19d8b893, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.459
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 8
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -26699,6 +26714,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 1626158187}
+  audioSource: {fileID: 386397202}
 --- !u!212 &2020146379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28045,6 +28062,8 @@ MonoBehaviour:
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
+  nyawa: {fileID: 1325242329}
+  audioSource: {fileID: 386397202}
 --- !u!212 &2141955293
 SpriteRenderer:
   m_ObjectHideFlags: 0
