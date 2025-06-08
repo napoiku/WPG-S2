@@ -32,7 +32,7 @@ public class plantHealth : MonoBehaviour
         {
             if (plot != null && plot.IsPlanted && plot.GetStage() < 2) // hanya bisa diserang jika stage < 2
             {
-                TakeDamage(100f);
+                TakeDamage(20f);
             }
         }
     }
