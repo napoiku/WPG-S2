@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,7 +16,6 @@ public class Plot : MonoBehaviour
     bool isScored = false;
     public Skor Skor;
     public bool IsPlanted => isPlanted;
-    public Image image;
     private int pilih;
     private int simpanPilih;
     public SpriteRenderer Plants;
@@ -28,7 +26,7 @@ public class Plot : MonoBehaviour
 
     public void Start()
     {
-        tunas = GameObject.Find("GameManager").GetComponent<tunas>();
+        tunas = GameObject.Find("Plot").GetComponent<tunas>();
     }
 
     // Update is called once per frame
