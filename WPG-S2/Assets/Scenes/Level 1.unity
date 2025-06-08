@@ -1128,7 +1128,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -1912,7 +1912,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -3103,6 +3103,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &200412746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 200412747}
+  - component: {fileID: 200412749}
+  - component: {fileID: 200412748}
+  m_Layer: 5
+  m_Name: Lose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &200412747
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200412746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061357314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 32.639, y: -4.2114}
+  m_SizeDelta: {x: 1025.277, y: 256.82}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &200412748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200412746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ff9296a8830244920ba70eb80bc7b77f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &200412749
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200412746}
+  m_CullTransparentMesh: 1
 --- !u!1 &219497837
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,6 +4869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   biji: 02000000020000000200000002000000
+  total: 0
 --- !u!1 &405202236
 GameObject:
   m_ObjectHideFlags: 0
@@ -4940,7 +5016,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -7778,7 +7854,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -8050,7 +8126,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -11862,7 +11938,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -13585,6 +13661,7 @@ RectTransform:
   - {fileID: 490584774}
   - {fileID: 1299148923}
   - {fileID: 1517879399}
+  - {fileID: 200412747}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17045,7 +17122,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -18052,7 +18129,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -22606,6 +22683,8 @@ MonoBehaviour:
   hotbar: {fileID: 526080224}
   quest: {fileID: 333442711}
   bgmController: {fileID: 1453075282}
+  total: {fileID: 386397201}
+  lose: {fileID: 200412746}
 --- !u!4 &1741859480
 Transform:
   m_ObjectHideFlags: 0
@@ -26614,7 +26693,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
@@ -27960,7 +28039,7 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
+  timeBtwStages: 40
   Skor: {fileID: 1741859479}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}

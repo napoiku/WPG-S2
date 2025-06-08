@@ -8,14 +8,26 @@ public class Skor : MonoBehaviour
     int fullGrow = 0;
     public TMP_Text fullGrowText;
     [SerializeField] private GameObject win;
-    [SerializeField] private GameObject hotbar;  
+    [SerializeField] private GameObject hotbar;
     [SerializeField] private GameObject quest;
     public StopMusic bgmController;
-    
+    public tunas total;
+    [SerializeField] private GameObject lose;
 
-    void Update() {
-        if(fullGrow == 3) {
+
+    void Update()
+    {
+        if (fullGrow == 3)
+        {
             win.SetActive(true);
+            hotbar.SetActive(false);
+            quest.SetActive(false);
+            bgmController.StopBGM();
+        }
+
+        if (total.total <= 0)
+        {
+            lose.SetActive(true);
             hotbar.SetActive(false);
             quest.SetActive(false);
             bgmController.StopBGM();
@@ -24,13 +36,16 @@ public class Skor : MonoBehaviour
         updateUI();
     }
 
-    public void iFullGrow() {
+    public void iFullGrow()
+    {
         fullGrow += 1;
     }
 
-    void updateUI() {
+    void updateUI()
+    {
         fullGrowText.text = "Pohon Tumbuh Sempurna : " + fullGrow + "/3";
     }
 
+    
 
 }

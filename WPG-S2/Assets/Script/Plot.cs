@@ -123,7 +123,7 @@ public class Plot : MonoBehaviour
         // plant.sprite = ;
         isPlanted = false;      // Stop pertumbuhan
         timer = 0f;             // Reset timer
-                                // plantStage = 0;         // Optional: Reset stage (kalau mau tanam ulang)
+        plantStage = 0;         // Optional: Reset stage (kalau mau tanam ulang)
 
         switch (simpanPilih)
         {
