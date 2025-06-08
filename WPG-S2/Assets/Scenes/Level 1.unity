@@ -1302,9 +1302,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66784850}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.001110695, w: 0.9999994}
+  m_LocalPosition: {x: 0.6, y: 0.1, z: 5.866623}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1104298744}
@@ -1336,7 +1336,7 @@ Transform:
   - {fileID: 1646120520}
   - {fileID: 2056879562}
   - {fileID: 1093339538}
-  m_Father: {fileID: 444664540}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &102585263
 GameObject:
@@ -5658,9 +5658,10 @@ GameObject:
   m_Component:
   - component: {fileID: 444664540}
   - component: {fileID: 444664539}
-  m_Layer: 0
+  - component: {fileID: 444664541}
+  m_Layer: 3
   m_Name: Map
-  m_TagString: Untagged
+  m_TagString: Map Area
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5729,12 +5730,54 @@ Transform:
   m_LocalPosition: {x: 0.6, y: 0.1, z: 5.866623}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 66784851}
-  - {fileID: 926817568}
-  - {fileID: 1944390086}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.127}
+--- !u!61 &444664541
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444664538}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 120.85657, y: 103.33}
+    newSize: {x: 50, y: 24.804688}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 120.85657, y: 103.33}
+  m_EdgeRadius: 0
 --- !u!1 &463834017
 GameObject:
   m_ObjectHideFlags: 0
@@ -12358,9 +12401,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926817567}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.31, y: 1.62, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.001110695, w: 0.9999994}
+  m_LocalPosition: {x: -260.5442, y: 12.020133, z: 5.866623}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2057654141}
@@ -12399,7 +12442,7 @@ Transform:
   - {fileID: 1928056888}
   - {fileID: 1537578808}
   - {fileID: 1378334746}
-  m_Father: {fileID: 444664540}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &943888133
 GameObject:
@@ -25417,9 +25460,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944390085}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.001110695, w: 0.9999994}
+  m_LocalPosition: {x: 0.6, y: 0.1, z: 5.866623}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1234656864}
@@ -25442,7 +25485,7 @@ Transform:
   - {fileID: 1633375704}
   - {fileID: 433543852}
   - {fileID: 582173545}
-  m_Father: {fileID: 444664540}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1947544397
 GameObject:
@@ -28695,6 +28738,9 @@ SceneRoots:
   - {fileID: 386397200}
   - {fileID: 1973035135}
   - {fileID: 444664540}
+  - {fileID: 66784851}
+  - {fileID: 926817568}
+  - {fileID: 1944390086}
   - {fileID: 1632541191}
   - {fileID: 2115921976}
   - {fileID: 1061357314}

@@ -167,7 +167,7 @@ MonoBehaviour:
   targetTag: Point
   animator: {fileID: 2424069047060517818}
   audioSource: {fileID: 3818274184899159588}
-  moveSpeed: 10
+  moveSpeed: 15
   stopDistance: 0.1
 --- !u!95 &2424069047060517818
 Animator:

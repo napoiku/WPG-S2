@@ -7,11 +7,12 @@ TagManager:
   - Enemy
   - Point
   - Wind
+  - Map Area
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Map
   - Water
   - UI
   - Attack Area
