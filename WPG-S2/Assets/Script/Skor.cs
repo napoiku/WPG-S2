@@ -13,16 +13,18 @@ public class Skor : MonoBehaviour
     public StopMusic bgmController;
     public tunas total;
     [SerializeField] private GameObject lose;
+    public blowerAttack blowerScript;
 
 
     void Update()
     {
-        if (fullGrow == 3)
+        if (fullGrow == 6)
         {
             win.SetActive(true);
             hotbar.SetActive(false);
             quest.SetActive(false);
             bgmController.StopBGM();
+            blowerScript.StopAttackAudio();
         }
 
         if (total.total <= 0)
@@ -31,6 +33,7 @@ public class Skor : MonoBehaviour
             hotbar.SetActive(false);
             quest.SetActive(false);
             bgmController.StopBGM();
+            blowerScript.StopAttackAudio();
         }
 
         updateUI();
@@ -43,7 +46,7 @@ public class Skor : MonoBehaviour
 
     void updateUI()
     {
-        fullGrowText.text = "Pohon Tumbuh Sempurna : " + fullGrow + "/3";
+        fullGrowText.text = "Pohon Tumbuh Sempurna : " + fullGrow + "/6";
     }
 
     

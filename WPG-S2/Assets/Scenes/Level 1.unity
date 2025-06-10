@@ -1623,8 +1623,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -2545,8 +2545,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -6288,8 +6288,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -9569,8 +9569,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -9843,8 +9843,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -14584,8 +14584,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -21402,8 +21402,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -22654,8 +22654,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -27115,8 +27115,8 @@ Transform:
   m_GameObject: {fileID: 1632541189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.001110695, w: 0.9999994}
-  m_LocalPosition: {x: 5.4742, y: 2.2293, z: 1}
-  m_LocalScale: {x: 18.278631, y: 31.805227, z: 1.0352231}
+  m_LocalPosition: {x: -1.2134, y: -3.5473, z: 1}
+  m_LocalScale: {x: 18.011765, y: 31.340872, z: 1.0201089}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -28310,7 +28310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741859480}
-  - component: {fileID: 1741859479}
+  - component: {fileID: 1741859481}
   m_Layer: 0
   m_Name: Skor
   m_TagString: Untagged
@@ -28318,25 +28318,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1741859479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741859478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e871825ea0961c4eba2fdf2b3ce606c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fullGrowText: {fileID: 1697497336}
-  win: {fileID: 15665989}
-  hotbar: {fileID: 526080224}
-  quest: {fileID: 333442711}
-  bgmController: {fileID: 1453075282}
-  total: {fileID: 386397201}
-  lose: {fileID: 200412746}
 --- !u!4 &1741859480
 Transform:
   m_ObjectHideFlags: 0
@@ -28353,6 +28334,26 @@ Transform:
   - {fileID: 333442712}
   m_Father: {fileID: 1061357314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741859481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741859478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca23add4bc243940954a5e2d4fe651a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullGrowText: {fileID: 1697497336}
+  win: {fileID: 15665989}
+  hotbar: {fileID: 526080224}
+  quest: {fileID: 333442711}
+  bgmController: {fileID: 1453075282}
+  total: {fileID: 386397201}
+  lose: {fileID: 200412746}
+  blowerScript: {fileID: 1485442178}
 --- !u!1 &1749364350
 GameObject:
   m_ObjectHideFlags: 0
@@ -33434,7 +33435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1973035143}
-  speed: 70
+  speed: 55
   rb: {fileID: 1973035136}
 --- !u!114 &1973035138
 MonoBehaviour:
@@ -34111,8 +34112,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -35801,8 +35802,8 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 40
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}

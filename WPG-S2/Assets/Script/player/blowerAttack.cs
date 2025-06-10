@@ -79,6 +79,21 @@ public class blowerAttack : MonoBehaviour
             audioPlayer.loop = true;
             audioPlayer.volume = 0.4f;
             audioPlayer.Play();
-        }    
+        }
+    }
+    
+    public void StopAttackAudio()
+    {
+        isAttacking = false;
+
+        if (playAudioCoroutine != null)
+        {
+            StopCoroutine(playAudioCoroutine);
+            playAudioCoroutine = null;
+        }
+
+        audioPlayer.Stop();
+        attackArea.enabled = false;
+        mycollider.enabled = false;
     }
 }

@@ -588,14 +588,14 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
-  nyawa: {fileID: 0}
-  audioSource: {fileID: 0}
+  nyawa: {fileID: 1181179191}
+  audioSource: {fileID: 386397202}
 --- !u!212 &66186611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2244,6 +2244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386397200}
   - component: {fileID: 386397201}
+  - component: {fileID: 386397202}
   m_Layer: 0
   m_Name: Plot
   m_TagString: Untagged
@@ -2286,6 +2287,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biji: 02000000020000000200000002000000
   total: 1
+--- !u!82 &386397202
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386397199}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d8201ef3593e58b42b08f86f19d8b893, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &419396453
 GameObject:
   m_ObjectHideFlags: 0
@@ -4010,14 +4107,14 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
-  nyawa: {fileID: 0}
-  audioSource: {fileID: 0}
+  nyawa: {fileID: 764222436}
+  audioSource: {fileID: 386397202}
 --- !u!212 &608851255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4284,14 +4381,14 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
-  nyawa: {fileID: 0}
-  audioSource: {fileID: 0}
+  nyawa: {fileID: 1774692605}
+  audioSource: {fileID: 386397202}
 --- !u!68 &616155493
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -6791,14 +6888,14 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
-  nyawa: {fileID: 0}
-  audioSource: {fileID: 0}
+  nyawa: {fileID: 1969550626}
+  audioSource: {fileID: 386397202}
 --- !u!212 &897492244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7946,6 +8043,7 @@ RectTransform:
   - {fileID: 490584774}
   - {fileID: 1299148923}
   - {fileID: 1517879399}
+  - {fileID: 1910520700}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9640,14 +9738,14 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
-  nyawa: {fileID: 0}
-  audioSource: {fileID: 0}
+  nyawa: {fileID: 469460037}
+  audioSource: {fileID: 386397202}
 --- !u!212 &1294645314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13282,7 +13380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741859480}
-  - component: {fileID: 1741859479}
+  - component: {fileID: 1741859481}
   m_Layer: 0
   m_Name: Skor
   m_TagString: Untagged
@@ -13290,25 +13388,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1741859479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741859478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e871825ea0961c4eba2fdf2b3ce606c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fullGrowText: {fileID: 1697497336}
-  win: {fileID: 15665989}
-  hotbar: {fileID: 526080224}
-  quest: {fileID: 333442711}
-  bgmController: {fileID: 1453075282}
-  total: {fileID: 0}
-  lose: {fileID: 0}
 --- !u!4 &1741859480
 Transform:
   m_ObjectHideFlags: 0
@@ -13325,6 +13404,26 @@ Transform:
   - {fileID: 333442712}
   m_Father: {fileID: 1061357314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741859481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741859478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca23add4bc243940954a5e2d4fe651a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullGrowText: {fileID: 1697497336}
+  win: {fileID: 15665989}
+  hotbar: {fileID: 526080224}
+  quest: {fileID: 333442711}
+  bgmController: {fileID: 1453075282}
+  total: {fileID: 386397201}
+  lose: {fileID: 1910520699}
+  blowerScript: {fileID: 0}
 --- !u!1 &1748616870
 GameObject:
   m_ObjectHideFlags: 0
@@ -14387,6 +14486,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1910520699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910520700}
+  - component: {fileID: 1910520702}
+  - component: {fileID: 1910520701}
+  m_Layer: 5
+  m_Name: Lose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1910520700
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910520699}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061357314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 32.639008, y: -4.211426}
+  m_SizeDelta: {x: 1025.277, y: 256.82}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1910520701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910520699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ff9296a8830244920ba70eb80bc7b77f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1910520702
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910520699}
+  m_CullTransparentMesh: 1
 --- !u!1 &1912027287
 GameObject:
   m_ObjectHideFlags: 0
@@ -15195,7 +15369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1973035143}
-  speed: 70
+  speed: 55
   rb: {fileID: 1973035136}
 --- !u!114 &1973035138
 MonoBehaviour:
@@ -15600,14 +15774,14 @@ MonoBehaviour:
   angsanaDead: {fileID: 21300000, guid: 3d024d0fab579a64683d0439283e2f7c, type: 3}
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
-  timeBtwStages: 5
-  Skor: {fileID: 1741859479}
+  timeBtwStages: 20
+  Skor: {fileID: 0}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
   benihHabis: {fileID: 1299148922}
-  nyawa: {fileID: 0}
-  audioSource: {fileID: 0}
+  nyawa: {fileID: 1626158187}
+  audioSource: {fileID: 386397202}
 --- !u!212 &2020146379
 SpriteRenderer:
   m_ObjectHideFlags: 0
