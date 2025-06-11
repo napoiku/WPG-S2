@@ -14,6 +14,7 @@ public class Skor : MonoBehaviour
     public tunas total;
     [SerializeField] private GameObject lose;
     public blowerAttack blowerScript;
+    private int lose1;
 
 
     void Update()
@@ -27,7 +28,7 @@ public class Skor : MonoBehaviour
             blowerScript.StopAttackAudio();
         }
 
-        if (total.total <= 0)
+        if (total.total <= 0 && lose1 == 0) //
         {
             lose.SetActive(true);
             hotbar.SetActive(false);
@@ -49,6 +50,12 @@ public class Skor : MonoBehaviour
         fullGrowText.text = "Pohon Tumbuh Sempurna : " + fullGrow + "/6";
     }
 
+    public void increase() {
+        lose1 += 1;
+    }
     
+    public void decrease() {
+        lose1 += 1;
+    }
 
 }

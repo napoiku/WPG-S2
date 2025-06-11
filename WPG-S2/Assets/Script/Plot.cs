@@ -59,6 +59,7 @@
             {
                 isScored = true;
                 Skor.iFullGrow();
+                Skor.decrease();
             }
 
             if (pilih != -1)
@@ -69,6 +70,10 @@
             if (plantStage == 2 && plant != null)
             {
                 plant.gameObject.tag = "Wind";
+            }
+
+            if(plantStage < 2) {
+                Skor.increase();
             }
         }
 

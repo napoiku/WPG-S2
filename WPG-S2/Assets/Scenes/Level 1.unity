@@ -1624,7 +1624,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -2546,7 +2546,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -4436,7 +4436,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 493330360}
   m_Father: {fileID: 526080225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5845,6 +5846,81 @@ RectTransform:
   m_AnchoredPosition: {x: 5.34, y: 0}
   m_SizeDelta: {x: 0.678, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &367164644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 367164645}
+  - component: {fileID: 367164647}
+  - component: {fileID: 367164646}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &367164645
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367164644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2078225629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2.1987152, y: 2.198761}
+  m_SizeDelta: {x: 47.3081, y: 47.3077}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &367164646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367164644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1105461842, guid: 7e19b26cd1bcda24db264ad2adbf5044, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &367164647
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367164644}
+  m_CullTransparentMesh: 1
 --- !u!1 &384452633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6289,7 +6365,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -7925,6 +8001,81 @@ RectTransform:
   m_AnchoredPosition: {x: -12, y: -320}
   m_SizeDelta: {x: 245.3365, y: 38.579895}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &493330359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493330360}
+  - component: {fileID: 493330362}
+  - component: {fileID: 493330361}
+  m_Layer: 5
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &493330360
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493330359}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 230245363}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 32.942062, y: -32.942444}
+  m_SizeDelta: {x: 47.3081, y: 47.3077}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &493330361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493330359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1853766312, guid: cd8a5097aa8dff74b869b9f1e20eebf7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &493330362
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493330359}
+  m_CullTransparentMesh: 1
 --- !u!1 &494438351
 GameObject:
   m_ObjectHideFlags: 0
@@ -9570,7 +9721,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -9844,7 +9995,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -11634,6 +11785,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722118611}
+  m_CullTransparentMesh: 1
+--- !u!1 &727200088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727200089}
+  - component: {fileID: 727200091}
+  - component: {fileID: 727200090}
+  m_Layer: 5
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &727200089
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727200088}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2008121114}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 32.942047, y: -32.941956}
+  m_SizeDelta: {x: 40.7119, y: 48.0406}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &727200090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727200088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1359462445, guid: c33890b2b1aa18547a020c2f7b554d5b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &727200091
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727200088}
   m_CullTransparentMesh: 1
 --- !u!1 &730494889
 GameObject:
@@ -14585,7 +14811,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -18698,6 +18924,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1164628854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1164628855}
+  - component: {fileID: 1164628857}
+  - component: {fileID: 1164628856}
+  m_Layer: 5
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1164628855
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164628854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1668979436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 32.942, y: -38.099976}
+  m_SizeDelta: {x: 47.3081, y: 37.047}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1164628856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164628854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1376405462, guid: 28b2306bf2afe58498ed29caa0329b69, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1164628857
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164628854}
+  m_CullTransparentMesh: 1
 --- !u!1 &1167333730
 GameObject:
   m_ObjectHideFlags: 0
@@ -21403,7 +21704,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -22655,7 +22956,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -27599,7 +27900,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1164628855}
   m_Father: {fileID: 526080225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -33832,7 +34134,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 727200089}
   m_Father: {fileID: 526080225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -34113,7 +34416,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
@@ -34939,7 +35242,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 367164645}
   m_Father: {fileID: 526080225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -35803,7 +36107,7 @@ MonoBehaviour:
   mahoniDead: {fileID: 21300000, guid: fa50973fc66f5154e969ad9c576028a5, type: 3}
   tanjungDead: {fileID: 21300000, guid: 0e9dfee27bab0fa46827bf9c323a1f2b, type: 3}
   timeBtwStages: 20
-  Skor: {fileID: 0}
+  Skor: {fileID: 1741859481}
   Plants: {fileID: 0}
   pilihBenih: {fileID: 490584773}
   tunas: {fileID: 386397201}
