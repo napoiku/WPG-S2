@@ -6934,6 +6934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameMenu: {fileID: 5959656532756755379}
   Hotbar: {fileID: 526080224}
+  Tutorial: {fileID: 1517879398}
 --- !u!1 &896009235
 GameObject:
   m_ObjectHideFlags: 0

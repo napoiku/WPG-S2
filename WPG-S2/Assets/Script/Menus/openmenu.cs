@@ -7,6 +7,7 @@ public class openmenu : MonoBehaviour
 {
     [SerializeField] GameObject GameMenu;
     [SerializeField] GameObject Hotbar;
+    [SerializeField] GameObject Tutorial;
     private bool isPaused = false;
 
     void Update()
@@ -15,13 +16,16 @@ public class openmenu : MonoBehaviour
         {
         GameMenu.SetActive(!GameMenu.activeSelf);
         Hotbar.SetActive(!Hotbar.activeSelf);
+        Tutorial.SetActive(!Tutorial.activeSelf);
         TogglePause();
+
         }
 
     }
 
     public void MainMenu()
     {
+    TogglePause();
     SceneManager.LoadSceneAsync(0);
     }
 
@@ -41,5 +45,7 @@ public class openmenu : MonoBehaviour
 
     public void resume(){
         TogglePause();
-    }
+    }
+
+
 }
