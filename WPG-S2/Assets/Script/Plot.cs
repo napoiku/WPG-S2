@@ -4,77 +4,75 @@
     using UnityEngine;
     using UnityEngine.EventSystems;
 
-    public class Plot : MonoBehaviour
-    {
-        public bool isPlanted = false;
-        public SpriteRenderer plant;
-        public Sprite[] manggaStages, angsanaStages, mahoniStages, tanjungStages;
-        public Sprite manggaDead, angsanaDead, mahoniDead, tanjungDead;
-        int plantStage = 0;
-        public float timeBtwStages = 5f;
-        float timer;
-        bool isScored = false;
-        public Skor Skor;
-        public bool IsPlanted => isPlanted;
-        private int pilih;
-        private int simpanPilih;
-        public SpriteRenderer Plants;
-        [SerializeField] private GameObject pilihBenih;
-        public tunas tunas;
-        private float clock;
-        [SerializeField] private GameObject benihHabis;
-        private bool isDead = false;
-        public plantHealth nyawa;
-        public AudioSource audioSource;
-        public void Start()
+public class Plot : MonoBehaviour
+{
+    public bool isPlanted = false;
+    public SpriteRenderer plant;
+    public Sprite[] manggaStages, angsanaStages, mahoniStages, tanjungStages;
+    public Sprite manggaDead, angsanaDead, mahoniDead, tanjungDead;
+    int plantStage = 0;
+    public float timeBtwStages = 5f;
+    float timer;
+    bool isScored = false;
+    public Skor Skor;
+    public bool IsPlanted => isPlanted;
+    private int pilih;
+    private int simpanPilih;
+    public SpriteRenderer Plants;
+    [SerializeField] private GameObject pilihBenih;
+    public tunas tunas;
+    private float clock;
+    [SerializeField] private GameObject benihHabis;
+    private bool isDead = false;
+    public plantHealth nyawa;
+    public AudioSource audioSource;
+    private bool donedecrease = false;
+    public void Start()
     {
         tunas = GameObject.Find("Plot").GetComponent<tunas>();
     }
 
-        // Update is called once per frame
-        public void Update()
+    // Update is called once per frame
+    public void Update()
+    {
+        if (clock > 0f)
         {
-            if (clock > 0f)
+            clock -= Time.deltaTime;
+            if (clock <= 0f)
             {
-                clock -= Time.deltaTime;
-                if (clock <= 0f)
-                {
-                    benihHabis.SetActive(false);
-                }
+                benihHabis.SetActive(false);
             }
+        }
 
-            if (isPlanted)
-            {
-                timer -= Time.deltaTime;
+        if (isPlanted)
+        {
+            timer -= Time.deltaTime;
 
-                if (timer < 0 && (plantStage < manggaStages.Length - 1 || plantStage < angsanaStages.Length - 1 || plantStage < mahoniStages.Length - 1 || plantStage < tanjungStages.Length - 1))
-                { //supaya fungsi UpdatePlant tidak terpanggil lagi jika telah mencapai fase 3
-                    timer = timeBtwStages;
-                    plantStage++;
-                    UpdatePlant();
-                }
+            if (timer < 0 && (plantStage < manggaStages.Length - 1 || plantStage < angsanaStages.Length - 1 || plantStage < mahoniStages.Length - 1 || plantStage < tanjungStages.Length - 1))
+            { //supaya fungsi UpdatePlant tidak terpanggil lagi jika telah mencapai fase 3
+                timer = timeBtwStages;
+                plantStage++;
+                UpdatePlant();
             }
+        }
 
-            if (plantStage == 2 && isScored == false)
-            {
-                isScored = true;
-                Skor.iFullGrow();
-                Skor.decrease();
-            }
+        if (plantStage == 2 && isScored == false)
+        {
+            isScored = true;
+            Skor.iFullGrow();
+            Skor.decrease();
+        }
 
-            if (pilih != -1)
-            {
-                pilihBenih.SetActive(false);
-            }
+        if (pilih != -1)
+        {
+            pilihBenih.SetActive(false);
+        }
 
-            if (plantStage == 2 && plant != null)
-            {
-                plant.gameObject.tag = "Wind";
-            }
+        if (plantStage == 2 && plant != null)
+        {
+            plant.gameObject.tag = "Wind";
+        }
 
-            if(plantStage < 2) {
-                Skor.increase();
-            }
         }
 
         public void Plant()
@@ -87,8 +85,10 @@
                     if (isDead) {
                         isDead = false;
                         nyawa.healthAmount = 100;
+                        donedecrease = false;
                     }
 
+                    Skor.increase();
                     tunas.KurangiBiji(pilih);
                     simpanPilih = pilih; //menyimpan variabel pilih dari script pilihTana.cs supaya tidak berganti ketika menjalankan fungsi UpdatePlant
                     isPlanted = true;
@@ -137,21 +137,26 @@
             isPlanted = false;      // Stop pertumbuhan
             isDead = true;
 
+        if (!donedecrease)
+        {
+            Skor.decrease();
+            donedecrease = true;
+        }
             switch (simpanPilih)
-            {
-                case 0:
-                    plant.sprite = manggaDead;
-                    break;
-                case 1:
-                    plant.sprite = angsanaDead;
-                    break;
-                case 2:
-                    plant.sprite = mahoniDead;
-                    break;
-                case 3:
-                    plant.sprite = tanjungDead;
-                    break;
-            }
+        {
+            case 0:
+                plant.sprite = manggaDead;
+                break;
+            case 1:
+                plant.sprite = angsanaDead;
+                break;
+            case 2:
+                plant.sprite = mahoniDead;
+                break;
+            case 3:
+                plant.sprite = tanjungDead;
+                break;
+        }
         }
         
         public int GetStage()

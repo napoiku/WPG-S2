@@ -14,7 +14,7 @@ public class Skor : MonoBehaviour
     public tunas total;
     [SerializeField] private GameObject lose;
     public blowerAttack blowerScript;
-    private int lose1;
+    private int lose1 = 0;
 
 
     void Update()
@@ -28,13 +28,18 @@ public class Skor : MonoBehaviour
             blowerScript.StopAttackAudio();
         }
 
-        if (total.total <= 0 && lose1 == 0) //
+        if (total.total <= 0 && lose1 == 0 && fullGrow < 6) //total benih habis, total pohon grow 0, target tidak tercapai
         {
             lose.SetActive(true);
             hotbar.SetActive(false);
             quest.SetActive(false);
             bgmController.StopBGM();
             blowerScript.StopAttackAudio();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log(""+ lose1);
         }
 
         updateUI();
@@ -51,11 +56,11 @@ public class Skor : MonoBehaviour
     }
 
     public void increase() {
-        lose1 += 1;
+        lose1++;
     }
     
     public void decrease() {
-        lose1 += 1;
+        lose1--;
     }
 
 }
